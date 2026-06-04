@@ -11,6 +11,7 @@ let USC = 0
 let PRSI = 0
 let taxCredit = 0
 let remainder = 0
+let my_future_fund = 0
 
 const NUMBER_OF_MONTHS = 12 //12 months
 const NUMBER_OF_WEEKS = 52 //52 weeks
@@ -43,6 +44,8 @@ const EMPLOYEE_TAX_CREDIT = 2000
 const SINGLE_TAX_CREDIT = 2000
 const MARRIED_TAX_CREDIT = 4000
 const SINGLE_PERSON_CHILD_CARER_TAX_CREDIT = 1900
+
+const MY_FUTURE_FUND_RATE = 0.015 //1.5%
 
 window.onload = function()
 {

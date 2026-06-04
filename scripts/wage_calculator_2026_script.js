@@ -104,6 +104,7 @@ function calculateSalary()
     calculatePAYE()
     calculatePRSI()
     calculateUSC()
+    calculateMyFutureFund()
     //printIncomeTable()
 
 
@@ -223,6 +224,11 @@ function calculateUSC()
          +  ((USC_CUT_OFF_POINT3 - USC_CUT_OFF_POINT2) * USC_RATE3) + ((salary - USC_CUT_OFF_POINT3) * USC_RATE4)
     }
     //printIncomeTable()
+}
+
+function calculateMyFutureFund()
+{
+    my_future_fund = salary * MY_FUTURE_FUND_RATE;
 }
 
 function validateInput(id)

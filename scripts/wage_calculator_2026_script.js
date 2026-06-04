@@ -475,16 +475,16 @@ function printIncomeTable()
     total_deductions_table.innerText = "Total Deductions"
 
     let yearly_total_deductions_table = document.createElement("td")
-    yearly_total_deductions_table.innerText = ((net_tax) + (PRSI * NUMBER_OF_WEEKS) + USC).toFixed(2)
+    yearly_total_deductions_table.innerText = ((net_tax) + (PRSI * NUMBER_OF_WEEKS) + USC + my_future_fund).toFixed(2)
 
     let monthly_total_deductions_table = document.createElement("td")
-    monthly_total_deductions_table.innerText = (((net_tax) / NUMBER_OF_MONTHS) + ((PRSI * NUMBER_OF_WEEKS) / NUMBER_OF_MONTHS) + (USC / NUMBER_OF_MONTHS)).toFixed(2)
+    monthly_total_deductions_table.innerText = (((net_tax) / NUMBER_OF_MONTHS) + ((PRSI * NUMBER_OF_WEEKS) / NUMBER_OF_MONTHS) + (USC / NUMBER_OF_MONTHS) + (my_future_fund / NUMBER_OF_MONTHS)).toFixed(2)
 
     let weekly_total_deductions_table = document.createElement("td")
-    weekly_total_deductions_table.innerText = (((net_tax) / NUMBER_OF_WEEKS) + PRSI + (USC / NUMBER_OF_WEEKS)).toFixed(2)
+    weekly_total_deductions_table.innerText = (((net_tax) / NUMBER_OF_WEEKS) + PRSI + (USC / NUMBER_OF_WEEKS) + (my_future_fund / NUMBER_OF_WEEKS)).toFixed(2)
 
     let daily_total_deductions_table = document.createElement("td")
-    daily_total_deductions_table.innerText = (((net_tax) / NUMBER_OF_WORKING_DAYS) + ((PRSI * NUMBER_OF_WEEKS) / NUMBER_OF_WORKING_DAYS) + (USC / NUMBER_OF_WORKING_DAYS)).toFixed(2)
+    daily_total_deductions_table.innerText = (((net_tax) / NUMBER_OF_WORKING_DAYS) + ((PRSI * NUMBER_OF_WEEKS) / NUMBER_OF_WORKING_DAYS) + (USC / NUMBER_OF_WORKING_DAYS) + (my_future_fund / NUMBER_OF_WORKING_DAYS)).toFixed(2)
 
     new_total_deductions_row.appendChild(total_deductions_table)
     new_total_deductions_row.appendChild(yearly_total_deductions_table)
@@ -501,16 +501,16 @@ function printIncomeTable()
     take_home_table.innerText = "Take Home"
 
     let yearly_take_home_table = document.createElement("td")
-    yearly_take_home_table.innerText = (salary - ((net_tax) + (PRSI * NUMBER_OF_WEEKS) + USC).toFixed(2))
+    yearly_take_home_table.innerText = (salary - ((net_tax) + (PRSI * NUMBER_OF_WEEKS) + USC + my_future_fund).toFixed(2))
 
     let monthly_take_home_table = document.createElement("td")
-    monthly_take_home_table.innerText = ((salary / NUMBER_OF_MONTHS) - (((net_tax) / NUMBER_OF_MONTHS) + ((PRSI * NUMBER_OF_WEEKS) / NUMBER_OF_MONTHS) + (USC / NUMBER_OF_MONTHS))).toFixed(2)
+    monthly_take_home_table.innerText = ((salary / NUMBER_OF_MONTHS) - (((net_tax) / NUMBER_OF_MONTHS) + ((PRSI * NUMBER_OF_WEEKS) / NUMBER_OF_MONTHS) + (USC / NUMBER_OF_MONTHS) + (my_future_fund / NUMBER_OF_MONTHS))).toFixed(2)
 
     let weekly_take_home_table = document.createElement("td")
-    weekly_take_home_table.innerText = ((salary / NUMBER_OF_WEEKS) - (((net_tax) / NUMBER_OF_WEEKS) + PRSI + (USC / NUMBER_OF_WEEKS))).toFixed(2)
+    weekly_take_home_table.innerText = ((salary / NUMBER_OF_WEEKS) - (((net_tax) / NUMBER_OF_WEEKS) + PRSI + (USC / NUMBER_OF_WEEKS) + (my_future_fund / NUMBER_OF_WEEKS))).toFixed(2)
 
     let daily_take_home_table = document.createElement("td")
-    daily_take_home_table.innerText = ((salary / NUMBER_OF_WORKING_DAYS) - (((net_tax) / NUMBER_OF_WORKING_DAYS) + ((PRSI * NUMBER_OF_WEEKS) / NUMBER_OF_WORKING_DAYS) + (USC / NUMBER_OF_WORKING_DAYS))).toFixed(2)
+    daily_take_home_table.innerText = ((salary / NUMBER_OF_WORKING_DAYS) - (((net_tax) / NUMBER_OF_WORKING_DAYS) + ((PRSI * NUMBER_OF_WEEKS) / NUMBER_OF_WORKING_DAYS) + (USC / NUMBER_OF_WORKING_DAYS) + (my_future_fund / NUMBER_OF_WORKING_DAYS))).toFixed(2)
 
     new_take_home_row.appendChild(take_home_table)
     new_take_home_row.appendChild(yearly_take_home_table)

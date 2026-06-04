@@ -19,7 +19,7 @@ const NUMBER_OF_WORKING_DAYS = 260 //260 working days
 const PAYE_STANDARD_RATE = 0.2 //20%
 const PAYE_HIGHER_RATE = 0.4 //40%
 
-const PRSI_RATE = 0.041 //4.1%
+const PRSI_RATE = 0.042 //4.2%
 const PRSI_CREDIT = 12 //12 Euro
 
 const USC_RATE1 = 0.005 //0.5%
@@ -30,8 +30,8 @@ const USC_RATE5 = 0.11 //11%
 
 const USC_CUT_OFF = 13000 //13000 Euro
 const USC_CUT_OFF_POINT1 = 12012 //12012 Euro
-const USC_CUT_OFF_POINT2 = 27382 //27382 Euro = 12012 Euro + 15370 Euro
-const USC_CUT_OFF_POINT3 = 70044 //70044 Euro = 27382 Euro + 42662 Euro
+const USC_CUT_OFF_POINT2 = 28700 //28700 Euro = 12012 Euro + 16688 Euro
+const USC_CUT_OFF_POINT3 = 70044 //70044 Euro = 28700 Euro + 41344 Euro
 const USC_CUT_OFF_POINT4 = 100000 //100000 Euro
 
 const SINGLE_CUT_OFF_POINT = 44000 //44000 Euro

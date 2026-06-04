@@ -442,6 +442,32 @@ function printIncomeTable()
 
     income_table.appendChild(new_USC_row)
 
+    //My Future Fund
+    let new_MFF_row = document.createElement("tr")
+    
+    let net_MFF_table = document.createElement("th")
+    net_MFF_table.innerText = "My Future Fund"
+
+    let yearly_MFF_table = document.createElement("td")
+    yearly_MFF_table.innerText = (my_future_fund).toFixed(2)
+
+    let monthly_MFF_table = document.createElement("td")
+    monthly_MFF_table.innerText = (my_future_fund / NUMBER_OF_MONTHS).toFixed(2)
+
+    let weekly_MFF_table = document.createElement("td")
+    weekly_MFF_table.innerText = (my_future_fund / NUMBER_OF_WEEKS).toFixed(2)
+
+    let daily_MFF_table = document.createElement("td")
+    daily_MFF_table.innerText = (my_future_fund / NUMBER_OF_WORKING_DAYS).toFixed(2)
+
+    new_MFF_row.appendChild(net_MFF_table)
+    new_MFF_row.appendChild(yearly_MFF_table)
+    new_MFF_row.appendChild(monthly_MFF_table)
+    new_MFF_row.appendChild(weekly_MFF_table)
+    new_MFF_row.appendChild(daily_MFF_table)
+
+    income_table.appendChild(new_MFF_row)
+
     //Total Deductions
     let new_total_deductions_row = document.createElement("tr")
     
